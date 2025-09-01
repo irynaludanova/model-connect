@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://modelconnectmiami.com/sitemap.xml
