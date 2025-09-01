@@ -42,7 +42,7 @@ export default function AddProfile() {
       id: `profile${Date.now()}`,
       ...data,
       createdAt: new Date().toISOString(),
-      photo: data.photo || "https://example.com/photos/default.jpg",
+      photo: data.photo || "/public/images/profiles/profile0.jpg",
     }
 
     const res = await fetch("/api/profiles", {
@@ -140,7 +140,7 @@ export default function AddProfile() {
           </div>
           <div className="form-group">
             <label>Фото (URL, опционально)</label>
-            <input {...register("photo")} />
+            <input {...register("photo")} type="file" />
             {errors.photo && (
               <p className="form-note">{errors.photo.message}</p>
             )}

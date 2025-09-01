@@ -8,7 +8,7 @@
     "city": "Miami Beach",
     "category": "Photographer",
     "description": "Профессиональный фотограф с 5-летним опытом.",
-    "photo": "https://example.com/photos/anna.jpg",
+    "photo": "/images/profiles/profile1.jpg",
     "createdAt": "2025-08-08T11:43:00Z"
   },
   {
@@ -20,7 +20,7 @@
     "city": "Hallandale Beach",
     "category": "Model",
     "description": "Модель с опытом на подиумах.",
-    "photo": "https://example.com/photos/igor.jpg",
+    "photo": "/images/profiles/profile2.jpg",
     "createdAt": "2025-08-08T12:00:00Z"
   },
   {
@@ -32,7 +32,7 @@
     "city": "Downtown Miami",
     "category": "Stylist",
     "description": "Стилист для фотосессий.",
-    "photo": "https://example.com/photos/maria.jpg",
+    "photo": "/images/profiles/profile3.jpg",
     "createdAt": "2025-08-08T13:00:00Z"
   },
   {
@@ -44,7 +44,151 @@
     "city": "Miami Beach",
     "category": "Model",
     "description": "Модель для рекламных кампаний.",
-    "photo": "https://example.com/photos/ekaterina.jpg",
+    "photo": "/images/profiles/profile4.jpg",
+    "createdAt": "2025-08-08T14:00:00Z"
+  },
+  {
+    "id": "profile5",
+    "name": "Анна Иванова",
+    "age": 28,
+    "email": "anna@example.com",
+    "phone": "+1234567890",
+    "city": "Miami Beach",
+    "category": "Photographer",
+    "description": "Профессиональный фотограф с 5-летним опытом.",
+    "photo": "/images/profiles/profile1.jpg",
+    "createdAt": "2025-08-08T11:43:00Z"
+  },
+  {
+    "id": "profile6",
+    "name": "Игорь Петров",
+    "age": 32,
+    "email": "igor@example.com",
+    "phone": "+1234567891",
+    "city": "Hallandale Beach",
+    "category": "Model",
+    "description": "Модель с опытом на подиумах.",
+    "photo": "/images/profiles/profile2.jpg",
+    "createdAt": "2025-08-08T12:00:00Z"
+  },
+  {
+    "id": "profile7",
+    "name": "Мария Сидорова",
+    "age": 25,
+    "email": "maria@example.com",
+    "phone": "+1234567892",
+    "city": "Downtown Miami",
+    "category": "Stylist",
+    "description": "Стилист для фотосессий.",
+    "photo": "/images/profiles/profile3.jpg",
+    "createdAt": "2025-08-08T13:00:00Z"
+  },
+  {
+    "id": "profile8",
+    "name": "Екатерина Смирнова",
+    "age": 30,
+    "email": "ekaterina@example.com",
+    "phone": "+1234567893",
+    "city": "Miami Beach",
+    "category": "Model",
+    "description": "Модель для рекламных кампаний.",
+    "photo": "/images/profiles/profile4.jpg",
+    "createdAt": "2025-08-08T14:00:00Z"
+  },
+  {
+    "id": "profile9",
+    "name": "Анна Иванова",
+    "age": 28,
+    "email": "anna@example.com",
+    "phone": "+1234567890",
+    "city": "Miami Beach",
+    "category": "Photographer",
+    "description": "Профессиональный фотограф с 5-летним опытом.",
+    "photo": "/images/profiles/profile1.jpg",
+    "createdAt": "2025-08-08T11:43:00Z"
+  },
+  {
+    "id": "profile10",
+    "name": "Игорь Петров",
+    "age": 32,
+    "email": "igor@example.com",
+    "phone": "+1234567891",
+    "city": "Hallandale Beach",
+    "category": "Model",
+    "description": "Модель с опытом на подиумах.",
+    "photo": "/images/profiles/profile2.jpg",
+    "createdAt": "2025-08-08T12:00:00Z"
+  },
+  {
+    "id": "profile11",
+    "name": "Мария Сидорова",
+    "age": 25,
+    "email": "maria@example.com",
+    "phone": "+1234567892",
+    "city": "Downtown Miami",
+    "category": "Stylist",
+    "description": "Стилист для фотосессий.",
+    "photo": "/images/profiles/profile3.jpg",
+    "createdAt": "2025-08-08T13:00:00Z"
+  },
+  {
+    "id": "profile12",
+    "name": "Екатерина Смирнова",
+    "age": 30,
+    "email": "ekaterina@example.com",
+    "phone": "+1234567893",
+    "city": "Miami Beach",
+    "category": "Model",
+    "description": "Модель для рекламных кампаний.",
+    "photo": "/images/profiles/profile4.jpg",
+    "createdAt": "2025-08-08T14:00:00Z"
+  },
+  {
+    "id": "profile13",
+    "name": "Анна Иванова",
+    "age": 28,
+    "email": "anna@example.com",
+    "phone": "+1234567890",
+    "city": "Miami Beach",
+    "category": "Photographer",
+    "description": "Профессиональный фотограф с 5-летним опытом.",
+    "photo": "/images/profiles/profile1.jpg",
+    "createdAt": "2025-08-08T11:43:00Z"
+  },
+  {
+    "id": "profile14",
+    "name": "Игорь Петров",
+    "age": 32,
+    "email": "igor@example.com",
+    "phone": "+1234567891",
+    "city": "Hallandale Beach",
+    "category": "Model",
+    "description": "Модель с опытом на подиумах.",
+    "photo": "/images/profiles/profile2.jpg",
+    "createdAt": "2025-08-08T12:00:00Z"
+  },
+  {
+    "id": "profile15",
+    "name": "Мария Сидорова",
+    "age": 25,
+    "email": "maria@example.com",
+    "phone": "+1234567892",
+    "city": "Downtown Miami",
+    "category": "Stylist",
+    "description": "Стилист для фотосессий.",
+    "photo": "/images/profiles/profile3.jpg",
+    "createdAt": "2025-08-08T13:00:00Z"
+  },
+  {
+    "id": "profile16",
+    "name": "Екатерина Смирнова",
+    "age": 30,
+    "email": "ekaterina@example.com",
+    "phone": "+1234567893",
+    "city": "Miami Beach",
+    "category": "Model",
+    "description": "Модель для рекламных кампаний.",
+    "photo": "/images/profiles/profile4.jpg",
     "createdAt": "2025-08-08T14:00:00Z"
   }
 ]

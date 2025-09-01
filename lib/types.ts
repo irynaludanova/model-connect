@@ -10,6 +10,6 @@ export interface Profile {
   city: City
   category: Category
   description: string
-  photo: string
+  photo: string | "/public/images/profiles/profile0.jpg"
   createdAt: string
 }
