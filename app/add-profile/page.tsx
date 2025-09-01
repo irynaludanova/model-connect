@@ -7,7 +7,7 @@ import { z } from "zod"
 import Link from "next/link"
 import Script from "next/script"
 import { Profile, ProfileForm } from "@/lib/types"
-import { Nav } from "@/components/nav/nav"
+import { Nav } from "@/components/nav/Nav"
 
 const profileSchema = z.object({
   name: z.string().min(2, "Имя должно быть не короче 2 символов"),

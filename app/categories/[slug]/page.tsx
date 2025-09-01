@@ -4,7 +4,7 @@ import Link from "next/link"
 import Image from "next/image"
 import Script from "next/script"
 import { Profile, Category } from "@/lib/types"
-import { Nav } from "@/components/nav/nav"
+import { Nav } from "@/components/nav/Nav"
 
 export async function generateStaticParams() {
   return [{ slug: "photographers" }, { slug: "models" }, { slug: "stylists" }]

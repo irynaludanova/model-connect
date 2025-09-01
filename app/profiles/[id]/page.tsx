@@ -1,5 +1,4 @@
-"use client"
-
+// app/profiles/[id]/page.tsx
 import { getProfiles } from "@/lib/storage"
 import { Metadata } from "next"
 import { notFound } from "next/navigation"

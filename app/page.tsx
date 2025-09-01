@@ -3,7 +3,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { Profile } from "@/lib/types"
 import Script from "next/script"
-import { Nav } from "@/components/nav/nav"
+import { Nav } from "@/components/nav/Nav"
 
 export const revalidate = 3600
 
@@ -51,7 +51,7 @@ export default function Home() {
         <h1>ModelConnect Miami</h1>
       </header>
 
-     <Nav/>
+      <Nav />
 
       <ul className="breadcrumb" aria-label="Хлебные крошки">
         <li>
