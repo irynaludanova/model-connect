@@ -13,3 +13,13 @@ export interface Profile {
   photo: string | "/public/images/profiles/profile0.jpg"
   createdAt: string
 }
+export type ProfileForm = {
+  name: string
+  age: number
+  email: string
+  phone?: string
+  city: City
+  category: Category
+  description: string
+  photo?: string
+}

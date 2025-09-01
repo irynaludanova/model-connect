@@ -190,5 +190,17 @@
     "description": "Модель для рекламных кампаний.",
     "photo": "/images/profiles/profile4.jpg",
     "createdAt": "2025-08-08T14:00:00Z"
+  },
+  {
+    "id": "profile1756724247995",
+    "name": "Test User",
+    "age": 25,
+    "email": "test@gmail.com",
+    "phone": "",
+    "city": "Hallandale Beach",
+    "category": "Stylist",
+    "description": "Test description",
+    "photo": "https://example.com",
+    "createdAt": "2025-09-01T10:57:27.995Z"
   }
 ]

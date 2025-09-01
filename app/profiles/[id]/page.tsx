@@ -1,8 +1,11 @@
+"use client"
+
 import { getProfiles } from "@/lib/storage"
 import { Metadata } from "next"
 import { notFound } from "next/navigation"
 import Image from "next/image"
 import Link from "next/link"
+import Script from "next/script"
 import { Profile } from "@/lib/types"
 
 export async function generateStaticParams() {
@@ -38,12 +41,38 @@ export default async function ProfilePage({
     notFound()
   }
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: profile.name,
+    description: profile.description,
+    image: profile.photo,
+    email: profile.email,
+    telephone: profile.phone || "",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: profile.city,
+      addressRegion: "FL",
+      addressCountry: "US",
+    },
+    jobTitle: profile.category,
+    birthDate: new Date(Date.now() - profile.age * 365 * 24 * 60 * 60 * 1000)
+      .toISOString()
+      .split("T")[0],
+    url: `https://model-connect-ten.vercel.app/profiles/${profile.id}`,
+  }
+
   return (
     <main>
+      <Script id="profile-jsonld" type="application/ld+json">
+        {JSON.stringify(structuredData)}
+      </Script>
+
       <header className="site-header">
         <h1>{profile.name}</h1>
       </header>
-      <nav>
+
+      <nav aria-label="Главное меню">
         <ul className="nav-list">
           <li>
             <Link href="/">Главная</Link>
@@ -59,7 +88,8 @@ export default async function ProfilePage({
           </li>
         </ul>
       </nav>
-      <ul className="breadcrumb">
+
+      <ul className="breadcrumb" aria-label="Хлебные крошки">
         <li>
           <Link href="/">Главная</Link>
         </li>
@@ -72,7 +102,8 @@ export default async function ProfilePage({
         </li>
         <li>{profile.name}</li>
       </ul>
-      <div className="profile-detail">
+
+      <section className="profile-detail" aria-label="Детали профиля">
         <div className="profile-detail__images">
           <Image
             src={profile.photo}
@@ -106,7 +137,7 @@ export default async function ProfilePage({
             {new Date(profile.createdAt).toLocaleString()}
           </p>
         </div>
-      </div>
+      </section>
     </main>
   )
 }
